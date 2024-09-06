@@ -1,4 +1,4 @@
-# PI-2 Backend
+# PI-2 Backend V1
 
 Este é o backend do projeto PI-2, desenvolvido utilizando Node.js, Express e MongoDB. O objetivo deste backend é fornecer acesso a um banco de dados que ainda será modelado, permitindo a manipulação de dados através de uma API REST.
 
