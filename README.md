@@ -80,23 +80,17 @@ Ref: appointments.pet_id <> pets.id
 Ref: time_slots.appointment_id - appointments.id
 ```
 
-## Endpoints
-Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resumo pode ser usado para o seu README para fornecer instruções claras sobre como interagir com a API.
-
 ---
 
 ## API Endpoints
 
 ### 1. **Clientes (`/clients`)**
 
-- **Listar Todos os Clientes**  
-  `GET /clients`  
+- **Listar Todos os Clientes** `GET /clients`  
   Retorna uma lista de todos os clientes.
 
-- **Criar Novo Cliente**  
-  `POST /clients`  
+- **Criar Novo Cliente** `POST /clients`  
   Cria um novo cliente.  
-  **Corpo do JSON:**
   ```json
   {
     "name": "Nome do Cliente",
@@ -105,10 +99,8 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Atualizar Cliente Existente**  
-  `PUT /clients/:id`  
+- **Atualizar Cliente Existente** `PUT /clients/:id`  
   Atualiza um cliente existente com o ID fornecido.  
-  **Corpo do JSON:**
   ```json
   {
     "name": "Nome Atualizado",
@@ -117,20 +109,16 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Deletar Cliente**  
-  `DELETE /clients/:id`  
+- **Deletar Cliente** `DELETE /clients/:id`  
   Deleta um cliente existente com o ID fornecido.
 
 ### 2. **Pets (`/pets`)**
 
-- **Listar Todos os Pets**  
-  `GET /pets`  
+- **Listar Todos os Pets** `GET /pets`  
   Retorna uma lista de todos os pets.
 
-- **Criar Novo Pet**  
-  `POST /pets`  
+- **Criar Novo Pet**  `POST /pets`  
   Cria um novo pet associado a um cliente.  
-  **Corpo do JSON:**
   ```json
   {
     "client_id": "id_do_cliente",
@@ -141,10 +129,8 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Atualizar Pet Existente**  
-  `PUT /pets/:id`  
+- **Atualizar Pet Existente**  `PUT /pets/:id`  
   Atualiza um pet existente com o ID fornecido.  
-  **Corpo do JSON:**
   ```json
   {
     "name": "Nome Atualizado",
@@ -154,20 +140,16 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Deletar Pet**  
-  `DELETE /pets/:id`  
+- **Deletar Pet**  `DELETE /pets/:id`  
   Deleta um pet existente com o ID fornecido.
 
 ### 3. **Admins (`/admins`)**
 
-- **Listar Todos os Admins**  
-  `GET /admins`  
+- **Listar Todos os Admins**  `GET /admins`  
   Retorna uma lista de todos os admins.
 
-- **Criar Novo Admin**  
-  `POST /admins`  
+- **Criar Novo Admin**  `POST /admins`  
   Cria um novo admin.  
-  **Corpo do JSON:**
   ```json
   {
     "username": "admin_user",
@@ -176,10 +158,8 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Atualizar Admin Existente**  
-  `PUT /admins/:id`  
+- **Atualizar Admin Existente**  `PUT /admins/:id`  
   Atualiza um admin existente com o ID fornecido.  
-  **Corpo do JSON:**
   ```json
   {
     "username": "novo_username",
@@ -188,20 +168,17 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Deletar Admin**  
-  `DELETE /admins/:id`  
+- **Deletar Admin**  `DELETE /admins/:id`  
   Deleta um admin existente com o ID fornecido.
 
 ### 4. **Appointments (`/appointments`)**
 
-- **Listar Todos os Agendamentos**  
-  `GET /appointments`  
+- **Listar Todos os Agendamentos**  `GET /appointments`  
   Retorna uma lista de todos os agendamentos.
 
 - **Criar Novo Agendamento**  
   `POST /appointments`  
   Cria um novo agendamento associado a um cliente e um pet.  
-  **Corpo do JSON:**
   ```json
   {
     "client_id": "id_do_cliente",
@@ -214,10 +191,8 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Atualizar Agendamento Existente**  
-  `PUT /appointments/:id`  
+- **Atualizar Agendamento Existente**  `PUT /appointments/:id`  
   Atualiza um agendamento existente com o ID fornecido.  
-  **Corpo do JSON:**
   ```json
   {
     "reason": "Vacinação",
@@ -228,20 +203,16 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Deletar Agendamento**  
-  `DELETE /appointments/:id`  
+- **Deletar Agendamento**  `DELETE /appointments/:id`  
   Deleta um agendamento existente com o ID fornecido.
 
 ### 5. **Time Slots (`/time_slots`)**
 
-- **Listar Todos os Slots de Tempo**  
-  `GET /time_slots`  
+- **Listar Todos os Slots de Tempo**  `GET /time_slots`  
   Retorna uma lista de todos os slots de tempo.
 
-- **Criar Novo Slot de Tempo**  
-  `POST /time_slots`  
+- **Criar Novo Slot de Tempo**  `POST /time_slots`  
   Cria um novo slot de tempo associado a um agendamento.  
-  **Corpo do JSON:**
   ```json
   {
     "slot_date": "2024-09-15",
@@ -251,10 +222,8 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   }
   ```
 
-- **Atualizar Slot de Tempo Existente**  
-  `PUT /time_slots/:id`  
+- **Atualizar Slot de Tempo Existente**  `PUT /time_slots/:id`  
   Atualiza um slot de tempo existente com o ID fornecido.  
-  **Corpo do JSON:**
   ```json
   {
     "slot_date": "2024-09-16",
@@ -268,4 +237,3 @@ Claro! Aqui está um resumo dos endpoints da API para sua aplicação. Esse resu
   `DELETE /time_slots/:id`  
   Deleta um slot de tempo existente com o ID fornecido.
 
----
