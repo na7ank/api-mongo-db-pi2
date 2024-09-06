@@ -8,6 +8,13 @@ router.get('/', clientController.getAllClients);
 // Rota para criar um novo cliente
 router.post('/', clientController.createClient);
 
-// Outras rotas (atualizar, deletar, etc.) aqui
+// Atualizar um cliente existente
+router.put('/:id', clientController.updateClient);
+
+// Deletar um cliente
+router.delete('/:id', clientController.deleteClient);
+
+// Obter um cliente específico pelo ID
+router.get('/:id', clientController.getClientById);
 
 module.exports = router;
