@@ -80,7 +80,6 @@ Ref: appointments.pet_id <> pets.id
 Ref: time_slots.appointment_id - appointments.id
 ```
 
----
 
 ## API Endpoints
 
@@ -129,7 +128,7 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Atualizar Pet Existente**  `PUT /pets/:id`  
+- **Atualizar Pet Existente** `PUT /pets/:id`  
   Atualiza um pet existente com o ID fornecido.  
   ```json
   {
@@ -140,12 +139,12 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Deletar Pet**  `DELETE /pets/:id`  
+- **Deletar Pet** `DELETE /pets/:id`  
   Deleta um pet existente com o ID fornecido.
 
 ### 3. **Admins (`/admins`)**
 
-- **Listar Todos os Admins**  `GET /admins`  
+- **Listar Todos os Admins** `GET /admins`  
   Retorna uma lista de todos os admins.
 
 - **Criar Novo Admin**  `POST /admins`  
@@ -158,7 +157,7 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Atualizar Admin Existente**  `PUT /admins/:id`  
+- **Atualizar Admin Existente** `PUT /admins/:id`  
   Atualiza um admin existente com o ID fornecido.  
   ```json
   {
@@ -168,12 +167,12 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Deletar Admin**  `DELETE /admins/:id`  
+- **Deletar Admin** `DELETE /admins/:id`  
   Deleta um admin existente com o ID fornecido.
 
 ### 4. **Appointments (`/appointments`)**
 
-- **Listar Todos os Agendamentos**  `GET /appointments`  
+- **Listar Todos os Agendamentos** `GET /appointments`  
   Retorna uma lista de todos os agendamentos.
 
 - **Criar Novo Agendamento**  
@@ -191,7 +190,7 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Atualizar Agendamento Existente**  `PUT /appointments/:id`  
+- **Atualizar Agendamento Existente** `PUT /appointments/:id`  
   Atualiza um agendamento existente com o ID fornecido.  
   ```json
   {
@@ -203,15 +202,15 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Deletar Agendamento**  `DELETE /appointments/:id`  
+- **Deletar Agendamento** `DELETE /appointments/:id`  
   Deleta um agendamento existente com o ID fornecido.
 
 ### 5. **Time Slots (`/time_slots`)**
 
-- **Listar Todos os Slots de Tempo**  `GET /time_slots`  
+- **Listar Todos os Slots de Tempo** `GET /time_slots`  
   Retorna uma lista de todos os slots de tempo.
 
-- **Criar Novo Slot de Tempo**  `POST /time_slots`  
+- **Criar Novo Slot de Tempo** `POST /time_slots`  
   Cria um novo slot de tempo associado a um agendamento.  
   ```json
   {
@@ -222,7 +221,7 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Atualizar Slot de Tempo Existente**  `PUT /time_slots/:id`  
+- **Atualizar Slot de Tempo Existente** `PUT /time_slots/:id`  
   Atualiza um slot de tempo existente com o ID fornecido.  
   ```json
   {
@@ -233,7 +232,6 @@ Ref: time_slots.appointment_id - appointments.id
   }
   ```
 
-- **Deletar Slot de Tempo**  
-  `DELETE /time_slots/:id`  
+- **Deletar Slot de Tempo** `DELETE /time_slots/:id`  
   Deleta um slot de tempo existente com o ID fornecido.
 
