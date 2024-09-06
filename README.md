@@ -8,6 +8,7 @@ api-mongo-db-pi2/
 ├── config/
 │   └── db.js       # Configuração do banco de dados
 ├── controllers/
+│   ├── adminController.js        # Lógica dos endpoints de admins
 │   ├── clientController.js       # Lógica dos endpoints de clientes
 │   ├── petController.js          # Lógica dos endpoints de pets
 │   ├── appointmentController.js  # Lógica dos endpoints de consultas
