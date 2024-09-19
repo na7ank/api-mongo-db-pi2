@@ -1,11 +1,13 @@
 const mongoose = require('mongoose');
 
+
 const connectDB = async () => {
   try {
-    await mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    // Certifique-se de que as variáveis de ambiente estão definidas corretamente
+    const mongoURI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+    
+    // Conecta ao MongoDB
+    await mongoose.connect(mongoURI);
     console.log('MongoDB conectado!');
   } catch (error) {
     console.error('Erro ao conectar ao MongoDB', error);
@@ -13,4 +15,9 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB;
+
+// Exporte tanto o connectDB quanto o mongoose
+module.exports = {
+  connectDB,
+  mongoose
+};
