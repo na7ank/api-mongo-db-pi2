@@ -11,7 +11,8 @@ Este é o backend do projeto PI-2, desenvolvido utilizando Node.js, Express e Mo
 ```markdown
 api-mongo-db-pi2/
 ├── config/
-│   └── db.js       # Configuração do banco de dados
+|   ├── sample-data.js  # Para gerar dados de amostra
+│   └── db.js           # Configuração do banco de dados
 ├── controllers/
 │   ├── adminController.js        # Lógica dos endpoints de admins
 │   ├── clientController.js       # Lógica dos endpoints de clientes
