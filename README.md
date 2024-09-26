@@ -2,6 +2,11 @@
 
 Este é o backend do projeto PI-2, desenvolvido utilizando Node.js, Express e MongoDB. O objetivo deste backend é fornecer acesso a um banco de dados que ainda será modelado, permitindo a manipulação de dados através de uma API REST.
 
+1. clone
+2. npm install
+3. node app.js
+4. use os endpoints
+
 ## Estrutura
 ```markdown
 api-mongo-db-pi2/
