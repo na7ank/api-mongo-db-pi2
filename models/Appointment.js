@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const appointmentSchema = new mongoose.Schema({
     client_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Client', required: true },
     pet_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Pet', required: true },
-    reason: { type: String, enum: ['Checkup', 'Vaccination', 'Surgery', 'Other'], required: true },
+    reason: { type: String, enum: ['Checkup', 'Vacinação', 'Banho e Tosa', 'Other'], required: true },
     appointment_date: { type: Date, required: true },
     appointment_time: { type: String, required: true },
     status: { type: String, enum: ['Scheduled', 'Completed', 'Canceled'], required: true },
