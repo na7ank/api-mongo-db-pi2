@@ -5,8 +5,8 @@ const Appointment = require('../models/Appointment');
 exports.getAllAppointments = async (req, res) => {
   try {
     const appointments = await Appointment.find()
-      .populate('client_id', 'name email')  // Popula o campo client_id com os dados do cliente
-      .populate('pet_id', 'name species');  // Popula o campo pet_id com os dados do pet
+      // .populate('client_id', 'name email')
+      // .populate('pet_id', 'name species'); 
     res.json(appointments);
   } catch (error) {
     res.status(400).json({ message: 'Erro ao listar agendamentos', error });
@@ -17,11 +17,29 @@ exports.getAllAppointments = async (req, res) => {
 // Controlador para criar um novo agendamento
 exports.createAppointment = async (req, res) => {
   try {
-    const { client_id, pet_id, reason, appointment_date, appointment_time, status, notes } = req.body;
+    const { 
+      client_name,
+      client_email,
+      client_phone,
+      pet_name,
+      pet_species,
+      pet_breed,
+      pet_age,
+      reason, 
+      appointment_date, 
+      appointment_time, 
+      status, 
+      notes 
+    } = req.body;
 
     const newAppointment = new Appointment({
-      client_id,
-      pet_id,
+      client_name,
+      client_email,
+      client_phone,
+      pet_name,
+      pet_species,
+      pet_breed,
+      pet_age,
       reason,
       appointment_date,
       appointment_time,
