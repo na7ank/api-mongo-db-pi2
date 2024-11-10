@@ -1,6 +1,7 @@
 const express = require('express');
 const { connectDB } = require('./config/db');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 
 // Carregar variáveis de ambiente do arquivo .env
@@ -16,6 +17,7 @@ const app = express();
 
 // Middleware para analisar JSON
 app.use(express.json());
+app.use(cors())
 
 
 // Incluir as rotas
